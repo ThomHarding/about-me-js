@@ -86,3 +86,19 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.hidden {
+    display: none;
+}
+
+#btn {
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    background-color: antiquewhite;
+}
+#animalDiv {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
