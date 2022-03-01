@@ -102,3 +102,9 @@ footer {
     margin-bottom: 15px;
     font-weight: bold;
 }
+
+#miningIcon {
+    height: 20px;
+    justify-content: flex-end;
+    font-weight: bold;
+}
