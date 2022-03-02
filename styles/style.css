@@ -123,3 +123,7 @@ footer {
 .levelText {
     text-align: center;
 }
+
+.membersContent{
+    grid-row: auto;
+}

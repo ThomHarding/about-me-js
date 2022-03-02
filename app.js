@@ -3,6 +3,7 @@ const animal = document.getElementById('favouriteAnimalDiv');
 var skillText = document.getElementsByClassName('levelText');
 const buttons = document.querySelectorAll('.levelIcon');
 var buttonsArray = Array.from(buttons);
+var skillsMaxed = 0;
 
 // set event listeners
 showButton.addEventListener('click', () => {
@@ -14,7 +15,12 @@ for (let button of buttonsArray) {
         const buttonIndex = buttonsArray.indexOf(button);
         if (skillText[buttonIndex].innerText < 99) {
             if (skillText[buttonIndex].innerText === '98') {
-                alert('Skill at maximum!');
+                skillsMaxed++;
+                if (skillsMaxed === 23) {
+                    alert('All skills maxed!');
+                } else {
+                    alert('Skill at maximum! Skills remaining: ' (23 - skillsMaxed));
+                }
             }
             skillText[buttonIndex].innerText++;
         }
