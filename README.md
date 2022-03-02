@@ -12,3 +12,5 @@ div to contain bio data, animal data, button
 
 deploy site to netlify
     link to deployed site in about section
+
+add buttons at the bottom you can click on to make a number above them go up

@@ -16,8 +16,12 @@ showButton.addEventListener('click', () => {
 for (let button of btnsArr) {
     button.addEventListener('click', () => {
         const buttonIndex = btnsArr.indexOf(button);
-        console.log(skillText[buttonIndex]);
-        skillText[buttonIndex].innerText++;
+        if (skillText[buttonIndex].innerText < 99) {
+            if (skillText[buttonIndex].innerText === '98') {
+                //miningMaxed.classList.remove('hidden');
+            }
+            skillText[buttonIndex].innerText++;
+        }
     }
     );
 }
