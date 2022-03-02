@@ -76,6 +76,23 @@ header img {
 p {
     margin: var(--gutter);
 }
+.grid-container {
+    display: inline-grid;
+}
+.levelText {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.levelText {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.levelIcon {
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
 
 footer {
     position: fixed;
@@ -103,8 +120,6 @@ footer {
     font-weight: bold;
 }
 
-#miningIcon {
-    height: 20px;
-    justify-content: flex-end;
-    font-weight: bold;
+.levelText {
+    text-align: center;
 }
