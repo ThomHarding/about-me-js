@@ -3,7 +3,7 @@ body {
 
     --color1: white;
     --color2: white;
-    --color3: white;
+    --color3: rgb(255, 255, 255);
     --color4: white;
     --color5: white;
 
@@ -76,6 +76,18 @@ header img {
 p {
     margin: var(--gutter);
 }
+.levelText {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.levelText {
+    grid-row: 1;
+}
+
+.levelIcon {
+    grid-row: 2;
+}
 
 footer {
     position: fixed;
@@ -85,4 +97,32 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.hidden {
+    display: none;
+}
+
+#btn {
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    background-color: antiquewhite;
+}
+#animalDiv {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.levelText {
+    text-align: center;
+}
+
+#freeContent{
+    display: inline-grid;
+}
+
+#membersContent{
+    display: none;
 }
