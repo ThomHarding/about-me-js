@@ -1,8 +1,10 @@
 const showButton = document.getElementById('animalButton');
+const memsButton = document.getElementById('membershipButton');
+const memsDiv = document.getElementById('membersContent');
 const animal = document.getElementById('favouriteAnimalDiv');
 var skillText = document.getElementsByClassName('levelText');
-const buttons = document.querySelectorAll('.levelIcon');
-var buttonsArray = Array.from(buttons);
+const skills = document.querySelectorAll('.levelIcon');
+var skillsArray = Array.from(skills);
 var skillsMaxed = 0;
 
 // set event listeners
@@ -10,9 +12,9 @@ showButton.addEventListener('click', () => {
     animal.classList.remove('hidden');
 });
 
-for (let button of buttonsArray) {
+for (let button of skillsArray) {
     button.addEventListener('click', () => {
-        const buttonIndex = buttonsArray.indexOf(button);
+        const buttonIndex = skillsArray.indexOf(button);
         if (skillText[buttonIndex].innerText < 99) {
             if (skillText[buttonIndex].innerText === '98') {
                 skillsMaxed++;
@@ -27,3 +29,7 @@ for (let button of buttonsArray) {
     }
     );
 }
+
+memsButton.addEventListener('click', () => {
+    memsDiv.style.display = 'inline-grid';
+});

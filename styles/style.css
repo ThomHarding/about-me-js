@@ -3,7 +3,7 @@ body {
 
     --color1: white;
     --color2: white;
-    --color3: white;
+    --color3: rgb(255, 255, 255);
     --color4: white;
     --color5: white;
 
@@ -76,22 +76,17 @@ header img {
 p {
     margin: var(--gutter);
 }
-.grid-container {
-    display: inline-grid;
-}
 .levelText {
     grid-row-start: 1;
     grid-row-end: 1;
 }
 
 .levelText {
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row: 1;
 }
 
 .levelIcon {
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row: 2;
 }
 
 footer {
@@ -124,6 +119,10 @@ footer {
     text-align: center;
 }
 
-.membersContent{
-    grid-row: auto;
+#freeContent{
+    display: inline-grid;
+}
+
+#membersContent{
+    display: none;
 }
